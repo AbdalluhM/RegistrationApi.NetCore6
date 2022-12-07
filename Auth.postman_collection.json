@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "9c7299e3-9fde-4244-acaa-a878cc1b2c25",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16040578"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"firstName\": \"Mohamed\",\r\n  \"lastName\": \"Belal\",\r\n  \"userName\": \"MohamedGoneam\",\r\n  \"email\": \"moh@moh.com\",\r\n  \"password\": \"Abdo?213\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7137/api/Auth/Register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7137",
+					"path": [
+						"api",
+						"Auth",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RefreshToken",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJzdWIiOiJNb2hhbWVkR29uZWFtIiwianRpIjoiNzU0YmEzMDAtYjE5Ny00OTJkLTg1ODItMzJhNDg0YTAxZmY1IiwiZW1haWwiOiJtb2hAbW9oLmNvbSIsInVpZCI6ImNkZWRjOWUwLTdjYWEtNDFlMC1hZDM3LTI0OTU3ZGI0NTViMiIsInJvbGVzIjoiVXNlciIsImV4cCI6MTY2MTE1NzM3OCwiaXNzIjoiU2VjdXJlQXBpIiwiYXVkIjoiU2VjdXJlQXBpVXNlciJ9.UE26cr9GO1blzNH-viYSQmDigSYDQfVb2LNYz2J5ZqE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7137/api/Auth/RefreshToken",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7137",
+					"path": [
+						"api",
+						"Auth",
+						"RefreshToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6IkpXVCJ9.eyJzdWIiOiJNb2hhbWVkR29uZWFtIiwianRpIjoiZjk3MjUwMWYtNjQ4Yy00ZjQ4LThkNGEtZDYwYTkzMWU1YWJkIiwiZW1haWwiOiJtb2hAbW9oLmNvbSIsInVpZCI6ImNkZWRjOWUwLTdjYWEtNDFlMC1hZDM3LTI0OTU3ZGI0NTViMiIsInJvbGVzIjoiVXNlciIsImV4cCI6MTY2MDkwMDA1OSwiaXNzIjoiU2VjdXJlQXBpIiwiYXVkIjoiU2VjdXJlQXBpVXNlciJ9.9XKW2eP0-2aAmOrq1EF63ypxs_OYeoLZmWzy-DS46Pw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7137/WeatherForecast",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7137",
+					"path": [
+						"WeatherForecast"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
