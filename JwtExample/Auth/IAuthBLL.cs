@@ -1,4 +1,4 @@
-﻿using static JwtExample.AuthDtos.AuthDto;
+﻿using JwtExample.AuthDtos;
 
 namespace JwtExample.Auth
 {

@@ -11,7 +11,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Security.Cryptography;
-using static JwtExample.AuthDtos.AuthDto;
 using Microsoft.EntityFrameworkCore;
 
 namespace JwtExample.Auth

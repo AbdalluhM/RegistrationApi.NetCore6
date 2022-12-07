@@ -1,7 +1,6 @@
 ﻿using JwtExample.Auth;
-using Microsoft.AspNetCore.Http;
+using JwtExample.AuthDtos;
 using Microsoft.AspNetCore.Mvc;
-using static JwtExample.AuthDtos.AuthDto;
 
 namespace JwtExample.Controllers
 {

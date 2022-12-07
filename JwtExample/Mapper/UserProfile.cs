@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using JwtExample.AuthDtos;
 using JwtExample.Models;
-using static JwtExample.AuthDtos.AuthDto;
 
 namespace JwtExample.Mapper
 {
